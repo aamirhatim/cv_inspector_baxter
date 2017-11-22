@@ -9,9 +9,9 @@ This repository contains the code which will distinguish objects on a plane and 
 
 # Computer Vision Component
 ### Packages Used
-[`perception_pcl`](https://github.com/ros-perception/perception_pcl.git) (kinetic-devel branch)
-[`OpenNi`](https://github.com/OpenNI/OpenNI.git)
-[`SensorKinect`](https://github.com/avin2/SensorKinect.git)
+* [`perception_pcl`](https://github.com/ros-perception/perception_pcl.git) (kinetic-devel branch)
+* [`OpenNi`](https://github.com/OpenNI/OpenNI.git)
+* [`SensorKinect`](https://github.com/avin2/SensorKinect.git)
 
 ### Overview
 1. Use `perception_pcl` to compute point clouds of various objects on the table. The nodelets in this package allow for individual point cloud extraction of multiple objects as well as plane recognition.
