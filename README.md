@@ -52,7 +52,7 @@ $ cd ../Redist/Sensor-Bin-Linux-x64-v5.1.2.1/
 $ sudo ./install.sh
 ```
 
-6. Test the installation by running the following commands from the `OpenNI` package installed in step 1:
+6. Plug in the Kinect and test the installation by running the following commands from the `OpenNI` package installed in step 1:
 ```
 $ cd Platform/Linux/Bin/x64-Release
 $ ./Sample-NiSimpleViewer
