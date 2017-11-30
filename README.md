@@ -7,7 +7,7 @@ The objective of this project is to implement a ROS program that trains Baxter t
 
 This repository contains the code which will distinguish objects on a plane and categorize them based on a user input.
 
-#Computer Vision Component
+# Computer Vision Component
 ### Packages Required
 * [`perception_pcl`](https://github.com/ros-perception/perception_pcl.git) (kinetic-devel branch)
 * [`openni2_camera`](https://github.com/ros-drivers/openni2_camera) (indigo-devel branch)
