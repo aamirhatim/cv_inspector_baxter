@@ -22,6 +22,11 @@ This repository contains the code which will distinguish objects on a plane and 
 
 ### Running the Code
 *Make sure all required packages are properly installed and the XtionPRO LIVE is pluged in!*
+```
+$ sudo apt-get install ros-kinetic-perception-pcl ros-kinetic-rqt-reconfigure
+<add openni2_camera package to your workspace>
+```
+
 To run the code, use the following command:
 ```
 $ roslaunch openni2_launch openni2.launch
