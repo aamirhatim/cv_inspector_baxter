@@ -61,6 +61,7 @@
   <build_depend>tf_conversions</build_depend>
   <build_depend>libpcl1-dev</build_depend>
   <build_depend>pcl_ros</build_depend>
+  <build_depend>message_runtime</build_depend>
 
   <!-- <build_export_depend>geometry_msgs</build_export_depend>
   <build_export_depend>nav_msgs</build_export_depend>
@@ -86,6 +87,7 @@
   <run_depend>libpcl1</run_depend>
   <run_depend>pcl_ros</run_depend>
   <run_depend>rgbd_launch</run_depend>
+  <run_depend>message_runtime</run_depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->

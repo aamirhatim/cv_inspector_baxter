@@ -44,11 +44,10 @@ add_definitions(${PCL_DEFINITIONS})
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
+add_message_files(
+  FILES
+  PCLData.msg
+)
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -65,10 +64,11 @@ add_definitions(${PCL_DEFINITIONS})
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   geometry_msgs#   nav_msgs#   std_msgs
-# )
+generate_messages(
+  DEPENDENCIES
+  geometry_msgs
+  std_msgs
+)
 
 ###################################
 ## catkin specific configuration ##
@@ -80,6 +80,7 @@ add_definitions(${PCL_DEFINITIONS})
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
+  CATKIN_DEPENDS message_runtime
 #  INCLUDE_DIRS include
 #  LIBRARIES cv_inspector_baxter
 #  CATKIN_DEPENDS geometry_msgs message_generation message_runtime nav_msgs roscpp rospy std_msgs
@@ -97,9 +98,31 @@ include_directories(
 
 ## Declare a C++ executable
 add_executable(cluster_extractor src/cluster_extractor.cpp)
+# add_executable(point_publisher1 src/point_publisher1.cpp)
+# add_executable(point_publisher2 src/point_publisher2.cpp)
+# add_executable(point_publisher3 src/point_publisher3.cpp)
+# add_executable(point_publisher4 src/point_publisher4.cpp)
+
+# add_dependencies(point_publisher1 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(cluster_extractor
   ${catkin_LIBRARIES}
   ${PCL_LIBRARIES}
 )
+# target_link_libraries(point_publisher1
+#   ${catkin_LIBRARIES}
+#   ${PCL_LIBRARIES}
+# )
+# target_link_libraries(point_publisher2
+#   ${catkin_LIBRARIES}
+#   ${PCL_LIBRARIES}
+# )
+# target_link_libraries(point_publisher3
+#   ${catkin_LIBRARIES}
+#   ${PCL_LIBRARIES}
+# )
+# target_link_libraries(point_publisher4
+#   ${catkin_LIBRARIES}
+#   ${PCL_LIBRARIES}
+# )
